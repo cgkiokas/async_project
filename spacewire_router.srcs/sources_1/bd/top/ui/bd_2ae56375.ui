@@ -1,0 +1,16 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.01532",
+   "Default View_TopLeft":"-434,-386",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace inst sw_tranceiver_0 -pg 1 -lvl 2 -x 380 -y -70 -defaultsOSRD
+preplace inst sw_traffic_gen_0 -pg 1 -lvl 1 -x -80 -y -70 -defaultsOSRD
+preplace netloc sw_traffic_gen_0_data_out 1 1 1 N -80
+preplace netloc sw_traffic_gen_0_strobe_out 1 1 1 N -60
+levelinfo -pg 1 -210 -80 380 510
+pagesize -pg 1 -db -bbox -sgen -210 -290 510 140
+"
+}
+

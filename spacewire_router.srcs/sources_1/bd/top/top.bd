@@ -1,0 +1,71 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a35tcpg236-1",
+      "name": "top",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2"
+    },
+    "design_tree": {
+      "sw_tranceiver_0": "",
+      "sw_traffic_gen_0": ""
+    },
+    "components": {
+      "sw_tranceiver_0": {
+        "vlnv": "xilinx.com:module_ref:sw_tranceiver:1.0",
+        "xci_name": "top_sw_tranceiver_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sw_tranceiver",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data_in": {
+            "direction": "I"
+          },
+          "strobe_in": {
+            "direction": "I"
+          },
+          "data_out": {
+            "direction": "O"
+          },
+          "strobe_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "sw_traffic_gen_0": {
+        "vlnv": "xilinx.com:module_ref:sw_traffic_gen:1.0",
+        "xci_name": "top_sw_traffic_gen_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sw_traffic_gen",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data_out": {
+            "direction": "O"
+          },
+          "strobe_out": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "sw_traffic_gen_0_data_out": {
+        "ports": [
+          "sw_traffic_gen_0/data_out",
+          "sw_tranceiver_0/data_in"
+        ]
+      },
+      "sw_traffic_gen_0_strobe_out": {
+        "ports": [
+          "sw_traffic_gen_0/strobe_out",
+          "sw_tranceiver_0/strobe_in"
+        ]
+      }
+    }
+  }
+}
