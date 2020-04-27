@@ -5,66 +5,53 @@
       "device": "xc7a35tcpg236-1",
       "name": "top",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2019.2"
+      "tool_version": "2019.2",
+      "validated": "true"
     },
     "design_tree": {
-      "sw_tranceiver_0": "",
-      "sw_traffic_gen_0": ""
+      "latch_0": ""
     },
     "components": {
-      "sw_tranceiver_0": {
-        "vlnv": "xilinx.com:module_ref:sw_tranceiver:1.0",
-        "xci_name": "top_sw_tranceiver_0_0",
+      "latch_0": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "xci_name": "top_latch_0_0",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "sw_tranceiver",
+          "ref_name": "latch",
           "boundary_crc": "0x0"
         },
         "ports": {
-          "data_in": {
+          "x1_t": {
             "direction": "I"
           },
-          "strobe_in": {
+          "x1_f": {
             "direction": "I"
           },
-          "data_out": {
+          "x0_t": {
+            "direction": "I"
+          },
+          "x0_f": {
+            "direction": "I"
+          },
+          "y_ack": {
+            "direction": "I"
+          },
+          "y1_t": {
             "direction": "O"
           },
-          "strobe_out": {
+          "y1_f": {
+            "direction": "O"
+          },
+          "y0_t": {
+            "direction": "O"
+          },
+          "y0_f": {
+            "direction": "O"
+          },
+          "x_ack": {
             "direction": "O"
           }
         }
-      },
-      "sw_traffic_gen_0": {
-        "vlnv": "xilinx.com:module_ref:sw_traffic_gen:1.0",
-        "xci_name": "top_sw_traffic_gen_0_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "sw_traffic_gen",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "data_out": {
-            "direction": "O"
-          },
-          "strobe_out": {
-            "direction": "O"
-          }
-        }
-      }
-    },
-    "nets": {
-      "sw_traffic_gen_0_data_out": {
-        "ports": [
-          "sw_traffic_gen_0/data_out",
-          "sw_tranceiver_0/data_in"
-        ]
-      },
-      "sw_traffic_gen_0_strobe_out": {
-        "ports": [
-          "sw_traffic_gen_0/strobe_out",
-          "sw_tranceiver_0/strobe_in"
-        ]
       }
     }
   }

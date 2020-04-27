@@ -42,5 +42,6 @@ architecture Behavioral of sw_tranceiver is
 
 begin
 
+data_out <= not data_in;
 
 end Behavioral;

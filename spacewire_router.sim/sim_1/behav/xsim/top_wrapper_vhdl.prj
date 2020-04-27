@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../spacewire_router.srcs/sources_1/new/c_gate.vhd" \
+"../../../../spacewire_router.ip_user_files/bd/top/ip/top_c_gate_0_0/sim/top_c_gate_0_0.vhd" \
+"../../../../spacewire_router.ip_user_files/bd/top/sim/top.vhd" \
+"../../../../spacewire_router.srcs/sources_1/bd/top/hdl/top_wrapper.vhd" \
+
+# Do not sort compile order
+nosort
