@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1588003887">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1588077888">
   <File Type="PA-TCL" Name="top_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="top_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_wrapper_reports.tcl"/>
@@ -12,6 +12,12 @@
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/c_gate.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MUX1.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -55,7 +61,7 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../../HW_Projects/digilent-xdc-master/Basys-3-Master.xdc">
+    <File Path="C:/Users/chris/OneDrive/HW_Projects/digilent-xdc-master/Basys-3-Master.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -76,4 +82,5 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="top_latch_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_MUX1_0_0"/>
 </GenRun>

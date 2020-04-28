@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# latch
+# MUX1
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -166,13 +166,13 @@ proc create_root_design { parentCell } {
 
   # Create ports
 
-  # Create instance: latch_0, and set properties
-  set block_name latch
-  set block_cell_name latch_0
-  if { [catch {set latch_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+  # Create instance: MUX1_0, and set properties
+  set block_name MUX1
+  set block_cell_name MUX1_0
+  if { [catch {set MUX1_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
      catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
-   } elseif { $latch_0 eq "" } {
+   } elseif { $MUX1_0 eq "" } {
      catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    }

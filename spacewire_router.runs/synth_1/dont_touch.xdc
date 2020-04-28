@@ -6,6 +6,9 @@
 # Block Designs: bd/top/top.bd
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==top || ORIG_REF_NAME==top} -quiet] -quiet
 
+# IP: bd/top/ip/top_MUX1_0_0/top_MUX1_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==top_MUX1_0_0 || ORIG_REF_NAME==top_MUX1_0_0} -quiet] -quiet
+
 # IP: bd/top/ip/top_latch_0_0/top_latch_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==top_latch_0_0 || ORIG_REF_NAME==top_latch_0_0} -quiet] -quiet
 

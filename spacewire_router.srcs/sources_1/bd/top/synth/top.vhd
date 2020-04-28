@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Mon Apr 27 18:01:00 2020
+--Date        : Tue Apr 28 14:51:45 2020
 --Host        : CHRIS-PC running 64-bit major release  (build 9200)
 --Command     : generate_target top.bd
 --Design      : top
@@ -19,37 +19,55 @@ entity top is
 end top;
 
 architecture STRUCTURE of top is
-  component top_latch_0_0 is
+  component top_MUX1_0_0 is
   port (
     x1_t : in STD_LOGIC;
     x1_f : in STD_LOGIC;
     x0_t : in STD_LOGIC;
     x0_f : in STD_LOGIC;
-    y_ack : in STD_LOGIC;
-    y1_t : out STD_LOGIC;
-    y1_f : out STD_LOGIC;
-    y0_t : out STD_LOGIC;
-    y0_f : out STD_LOGIC;
-    x_ack : out STD_LOGIC
+    y1_t : in STD_LOGIC;
+    y1_f : in STD_LOGIC;
+    y0_t : in STD_LOGIC;
+    y0_f : in STD_LOGIC;
+    ctl_t : in STD_LOGIC;
+    ctl_f : in STD_LOGIC;
+    z_ack : in STD_LOGIC;
+    y_ack : out STD_LOGIC;
+    x_ack : out STD_LOGIC;
+    ctl_ack : out STD_LOGIC;
+    z1_t : out STD_LOGIC;
+    z1_f : out STD_LOGIC;
+    z0_t : out STD_LOGIC;
+    z0_f : out STD_LOGIC
   );
-  end component top_latch_0_0;
-  signal NLW_latch_0_x_ack_UNCONNECTED : STD_LOGIC;
-  signal NLW_latch_0_y0_f_UNCONNECTED : STD_LOGIC;
-  signal NLW_latch_0_y0_t_UNCONNECTED : STD_LOGIC;
-  signal NLW_latch_0_y1_f_UNCONNECTED : STD_LOGIC;
-  signal NLW_latch_0_y1_t_UNCONNECTED : STD_LOGIC;
+  end component top_MUX1_0_0;
+  signal NLW_MUX1_0_ctl_ack_UNCONNECTED : STD_LOGIC;
+  signal NLW_MUX1_0_x_ack_UNCONNECTED : STD_LOGIC;
+  signal NLW_MUX1_0_y_ack_UNCONNECTED : STD_LOGIC;
+  signal NLW_MUX1_0_z0_f_UNCONNECTED : STD_LOGIC;
+  signal NLW_MUX1_0_z0_t_UNCONNECTED : STD_LOGIC;
+  signal NLW_MUX1_0_z1_f_UNCONNECTED : STD_LOGIC;
+  signal NLW_MUX1_0_z1_t_UNCONNECTED : STD_LOGIC;
 begin
-latch_0: component top_latch_0_0
+MUX1_0: component top_MUX1_0_0
      port map (
+      ctl_ack => NLW_MUX1_0_ctl_ack_UNCONNECTED,
+      ctl_f => '0',
+      ctl_t => '0',
       x0_f => '0',
       x0_t => '0',
       x1_f => '0',
       x1_t => '0',
-      x_ack => NLW_latch_0_x_ack_UNCONNECTED,
-      y0_f => NLW_latch_0_y0_f_UNCONNECTED,
-      y0_t => NLW_latch_0_y0_t_UNCONNECTED,
-      y1_f => NLW_latch_0_y1_f_UNCONNECTED,
-      y1_t => NLW_latch_0_y1_t_UNCONNECTED,
-      y_ack => '0'
+      x_ack => NLW_MUX1_0_x_ack_UNCONNECTED,
+      y0_f => '0',
+      y0_t => '0',
+      y1_f => '0',
+      y1_t => '0',
+      y_ack => NLW_MUX1_0_y_ack_UNCONNECTED,
+      z0_f => NLW_MUX1_0_z0_f_UNCONNECTED,
+      z0_t => NLW_MUX1_0_z0_t_UNCONNECTED,
+      z1_f => NLW_MUX1_0_z1_f_UNCONNECTED,
+      z1_t => NLW_MUX1_0_z1_t_UNCONNECTED,
+      z_ack => '0'
     );
 end STRUCTURE;

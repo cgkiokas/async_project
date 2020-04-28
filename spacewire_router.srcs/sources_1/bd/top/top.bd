@@ -9,15 +9,15 @@
       "validated": "true"
     },
     "design_tree": {
-      "latch_0": ""
+      "MUX1_0": ""
     },
     "components": {
-      "latch_0": {
-        "vlnv": "xilinx.com:module_ref:latch:1.0",
-        "xci_name": "top_latch_0_0",
+      "MUX1_0": {
+        "vlnv": "xilinx.com:module_ref:MUX1:1.0",
+        "xci_name": "top_MUX1_0_0",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "latch",
+          "ref_name": "MUX1",
           "boundary_crc": "0x0"
         },
         "ports": {
@@ -33,22 +33,46 @@
           "x0_f": {
             "direction": "I"
           },
-          "y_ack": {
+          "y1_t": {
             "direction": "I"
           },
-          "y1_t": {
-            "direction": "O"
-          },
           "y1_f": {
-            "direction": "O"
+            "direction": "I"
           },
           "y0_t": {
-            "direction": "O"
+            "direction": "I"
           },
           "y0_f": {
+            "direction": "I"
+          },
+          "ctl_t": {
+            "direction": "I"
+          },
+          "ctl_f": {
+            "direction": "I"
+          },
+          "z_ack": {
+            "direction": "I"
+          },
+          "y_ack": {
             "direction": "O"
           },
           "x_ack": {
+            "direction": "O"
+          },
+          "ctl_ack": {
+            "direction": "O"
+          },
+          "z1_t": {
+            "direction": "O"
+          },
+          "z1_f": {
+            "direction": "O"
+          },
+          "z0_t": {
+            "direction": "O"
+          },
+          "z0_f": {
             "direction": "O"
           }
         }

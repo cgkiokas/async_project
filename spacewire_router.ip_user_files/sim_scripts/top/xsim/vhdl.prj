@@ -1,5 +1,0 @@
-vhdl xil_defaultlib  \
-"../../../bd/top/ip/top_c_gate_0_0/sim/top_c_gate_0_0.vhd" \
-"../../../bd/top/sim/top.vhd" \
-
-nosort
