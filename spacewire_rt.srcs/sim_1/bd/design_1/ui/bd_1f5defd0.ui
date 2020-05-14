@@ -1,0 +1,89 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.28574",
+   "Default View_TopLeft":"499,237",
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"/xlconstant_0|/xlconstant_1|/CROSS2X2_0|/latch_0|/latch_1|/latch_3|/latch_4|/latch_5|/latch_6|/latch_7|/latch_8|/latch_9|/latch_10|/latch_11|/ClockGenerator_0|/APU_0|/address_selection_0|",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x -1060 -y 270 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 5 -x 630 -y 610 -defaultsOSRD
+preplace inst Host_0 -pg 1 -lvl 8 -x 1610 -y 350 -defaultsOSRD
+preplace inst latch_0 -pg 1 -lvl 2 -x -840 -y 420 -defaultsOSRD
+preplace inst out_latch_0 -pg 1 -lvl 7 -x 1370 -y 360 -defaultsOSRD
+preplace inst latch_1 -pg 1 -lvl 3 -x -340 -y -1950 -defaultsOSRD
+preplace inst latch_3 -pg 1 -lvl 3 -x -340 -y -1790 -defaultsOSRD
+preplace inst latch_4 -pg 1 -lvl 3 -x -340 -y -1630 -defaultsOSRD
+preplace inst latch_5 -pg 1 -lvl 3 -x -340 -y -1470 -defaultsOSRD
+preplace inst latch_6 -pg 1 -lvl 3 -x -340 -y -1310 -defaultsOSRD
+preplace inst latch_7 -pg 1 -lvl 3 -x -340 -y -1150 -defaultsOSRD
+preplace inst latch_8 -pg 1 -lvl 3 -x -340 -y -990 -defaultsOSRD
+preplace inst latch_9 -pg 1 -lvl 3 -x -340 -y -830 -defaultsOSRD
+preplace inst latch_10 -pg 1 -lvl 3 -x -340 -y -670 -defaultsOSRD
+preplace inst latch_11 -pg 1 -lvl 3 -x -340 -y -470 -defaultsOSRD
+preplace inst ClockGenerator_0 -pg 1 -lvl 1 -x -1060 -y 410 -defaultsOSRD
+preplace inst APU_0 -pg 1 -lvl 4 -x 300 -y 440 -defaultsOSRD
+preplace inst address_selection_0 -pg 1 -lvl 5 -x 630 -y 450 -defaultsOSRD
+preplace inst out_latch_1 -pg 1 -lvl 7 -x 1370 -y 530 -defaultsOSRD
+preplace inst Host_1 -pg 1 -lvl 8 -x 1610 -y 520 -defaultsOSRD
+preplace inst CROSS2X2_0 -pg 1 -lvl 6 -x 980 -y 440 -defaultsOSRD
+preplace netloc ClockGenerator_0_d_t 1 1 1 N 410
+preplace netloc ClockGenerator_0_d_f 1 1 1 N 430
+preplace netloc latch_0_x_ack 1 0 3 -1160 330 N 330 -740
+preplace netloc latch_2_y0_t 1 7 1 N 340
+preplace netloc latch_2_y0_f 1 7 1 N 360
+preplace netloc Sink_0_ACK 1 6 3 1190 270 N 270 1700
+preplace netloc CROSS2X2_0_out_port_1_data_t 1 6 1 1160 350n
+preplace netloc CROSS2X2_0_out_port_1_data_f 1 6 1 1170 370n
+preplace netloc APU_0_address_t 1 5 1 780 440n
+preplace netloc APU_0_address_f 1 5 1 770 460n
+preplace netloc CROSS2X2_0_addres_ack 1 4 3 420 280 NJ 280 1140
+preplace netloc xlconstant_1_dout 1 5 1 790 430n
+preplace netloc ClockGenerator_0_preset 1 1 6 -960 320 -740 320 N 320 N 320 790 290 1180
+preplace netloc CROSS2X2_0_in_port_1_ack 1 2 5 -700 -150 N -150 N -150 N -150 1150
+preplace netloc latch_1_y0_t 1 3 3 N -1970 N -1970 780
+preplace netloc latch_1_y0_f 1 3 3 N -1950 N -1950 770
+preplace netloc xlconstant_0_dout 1 1 1 -950 270n
+preplace netloc latch_0_y0_t 1 2 2 -730 430 N
+preplace netloc latch_0_y0_f 1 2 2 -720 450 N
+preplace netloc latch_8_y0_t 1 2 2 -680 -220 -30
+preplace netloc latch_8_y0_f 1 2 2 -670 -230 -40
+preplace netloc latch_4_y0_t 1 2 2 -620 -380 -50
+preplace netloc latch_4_y0_f 1 2 2 -590 -560 -120
+preplace netloc latch_3_y0_t 1 2 2 -610 -2040 -240
+preplace netloc latch_3_y0_f 1 2 2 -640 -2050 -20
+preplace netloc latch_7_y0_t 1 2 2 -650 -290 -80
+preplace netloc latch_7_y0_f 1 2 2 -630 -300 -150
+preplace netloc latch_5_y0_t 1 2 2 -530 -350 -60
+preplace netloc latch_5_y0_f 1 2 2 -500 -360 -130
+preplace netloc latch_6_x_ack 1 2 2 -550 -340 -200
+preplace netloc latch_5_x_ack 1 2 2 -460 -370 -190
+preplace netloc latch_7_x_ack 1 2 2 -660 -310 -210
+preplace netloc latch_3_x_ack 1 2 2 -510 -580 -110
+preplace netloc latch_4_x_ack 1 2 2 -450 -570 -180
+preplace netloc latch_8_x_ack 1 1 3 -940 -160 N -160 -20
+preplace netloc latch_6_y0_t 1 2 2 -490 -320 -70
+preplace netloc latch_6_y0_f 1 2 2 -470 -330 -140
+preplace netloc latch_9_x_ack 1 2 2 -600 -280 -230
+preplace netloc latch_9_y0_t 1 2 2 -540 -260 -170
+preplace netloc latch_9_y0_f 1 2 2 -520 -270 -220
+preplace netloc latch_10_x_ack 1 2 2 -580 -250 -240
+preplace netloc latch_10_y0_t 1 2 2 -570 -210 -90
+preplace netloc latch_10_y0_f 1 2 2 -560 -200 -100
+preplace netloc latch_11_x_ack 1 2 2 -640 -170 -160
+preplace netloc latch_11_y0_t 1 2 2 -710 -180 -120
+preplace netloc latch_11_y0_f 1 2 2 -690 -190 -180
+preplace netloc latch_1_x_ack 1 2 2 -480 -240 -10
+preplace netloc APU_0_address_out 1 4 1 410 430n
+preplace netloc latch_12_y0_t 1 7 1 N 510
+preplace netloc latch_12_y0_f 1 7 1 N 530
+preplace netloc CROSS2X2_0_out_port_2_data_t 1 6 1 1170 420n
+preplace netloc CROSS2X2_0_out_port_2_data_f 1 6 1 1160 440n
+preplace netloc latch_2_x_ack 1 5 3 800 260 NJ 260 1470
+preplace netloc latch_12_x_ack 1 5 3 800 620 NJ 620 1470
+preplace netloc Sink_1_ACK 1 6 3 1190 630 NJ 630 1700
+levelinfo -pg 1 -1180 -1060 -840 -340 300 630 980 1370 1610 1870
+pagesize -pg 1 -db -bbox -sgen -1180 -2060 1870 850
+"
+}
+0

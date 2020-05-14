@@ -1,0 +1,998 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a35tcpg236-1",
+      "name": "design_1",
+      "synth_flow_mode": "None",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "xlconstant_0": "",
+      "xlconstant_1": "",
+      "Host_0": "",
+      "latch_0": "",
+      "out_latch_0": "",
+      "latch_1": "",
+      "latch_3": "",
+      "latch_4": "",
+      "latch_5": "",
+      "latch_6": "",
+      "latch_7": "",
+      "latch_8": "",
+      "latch_9": "",
+      "latch_10": "",
+      "latch_11": "",
+      "ClockGenerator_0": "",
+      "APU_0": "",
+      "address_selection_0": "",
+      "out_latch_1": "",
+      "Host_1": "",
+      "CROSS2X2_0": ""
+    },
+    "components": {
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "design_1_xlconstant_0_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "design_1_xlconstant_0_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      },
+      "Host_0": {
+        "vlnv": "xilinx.com:module_ref:Sink:1.0",
+        "xci_name": "design_1_Sink_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Sink",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "DT": {
+            "direction": "I"
+          },
+          "DF": {
+            "direction": "I"
+          },
+          "ACK": {
+            "direction": "O"
+          }
+        }
+      },
+      "latch_0": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "xci_name": "design_1_latch_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "preset": {
+            "direction": "I"
+          },
+          "x0_t": {
+            "direction": "I"
+          },
+          "x0_f": {
+            "direction": "I"
+          },
+          "y_ack": {
+            "direction": "I"
+          },
+          "y0_t": {
+            "direction": "O"
+          },
+          "y0_f": {
+            "direction": "O"
+          },
+          "x_ack": {
+            "direction": "O"
+          }
+        }
+      },
+      "out_latch_0": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "xci_name": "design_1_latch_2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "preset": {
+            "direction": "I"
+          },
+          "x0_t": {
+            "direction": "I"
+          },
+          "x0_f": {
+            "direction": "I"
+          },
+          "y_ack": {
+            "direction": "I"
+          },
+          "y0_t": {
+            "direction": "O"
+          },
+          "y0_f": {
+            "direction": "O"
+          },
+          "x_ack": {
+            "direction": "O"
+          }
+        }
+      },
+      "latch_1": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "xci_name": "design_1_latch_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "preset": {
+            "direction": "I"
+          },
+          "x0_t": {
+            "direction": "I"
+          },
+          "x0_f": {
+            "direction": "I"
+          },
+          "y_ack": {
+            "direction": "I"
+          },
+          "y0_t": {
+            "direction": "O"
+          },
+          "y0_f": {
+            "direction": "O"
+          },
+          "x_ack": {
+            "direction": "O"
+          }
+        }
+      },
+      "latch_3": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "xci_name": "design_1_latch_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "preset": {
+            "direction": "I"
+          },
+          "x0_t": {
+            "direction": "I"
+          },
+          "x0_f": {
+            "direction": "I"
+          },
+          "y_ack": {
+            "direction": "I"
+          },
+          "y0_t": {
+            "direction": "O"
+          },
+          "y0_f": {
+            "direction": "O"
+          },
+          "x_ack": {
+            "direction": "O"
+          }
+        }
+      },
+      "latch_4": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "xci_name": "design_1_latch_1_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "preset": {
+            "direction": "I"
+          },
+          "x0_t": {
+            "direction": "I"
+          },
+          "x0_f": {
+            "direction": "I"
+          },
+          "y_ack": {
+            "direction": "I"
+          },
+          "y0_t": {
+            "direction": "O"
+          },
+          "y0_f": {
+            "direction": "O"
+          },
+          "x_ack": {
+            "direction": "O"
+          }
+        }
+      },
+      "latch_5": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "xci_name": "design_1_latch_1_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "preset": {
+            "direction": "I"
+          },
+          "x0_t": {
+            "direction": "I"
+          },
+          "x0_f": {
+            "direction": "I"
+          },
+          "y_ack": {
+            "direction": "I"
+          },
+          "y0_t": {
+            "direction": "O"
+          },
+          "y0_f": {
+            "direction": "O"
+          },
+          "x_ack": {
+            "direction": "O"
+          }
+        }
+      },
+      "latch_6": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "xci_name": "design_1_latch_1_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "preset": {
+            "direction": "I"
+          },
+          "x0_t": {
+            "direction": "I"
+          },
+          "x0_f": {
+            "direction": "I"
+          },
+          "y_ack": {
+            "direction": "I"
+          },
+          "y0_t": {
+            "direction": "O"
+          },
+          "y0_f": {
+            "direction": "O"
+          },
+          "x_ack": {
+            "direction": "O"
+          }
+        }
+      },
+      "latch_7": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "xci_name": "design_1_latch_1_4",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "preset": {
+            "direction": "I"
+          },
+          "x0_t": {
+            "direction": "I"
+          },
+          "x0_f": {
+            "direction": "I"
+          },
+          "y_ack": {
+            "direction": "I"
+          },
+          "y0_t": {
+            "direction": "O"
+          },
+          "y0_f": {
+            "direction": "O"
+          },
+          "x_ack": {
+            "direction": "O"
+          }
+        }
+      },
+      "latch_8": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "xci_name": "design_1_latch_1_5",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "preset": {
+            "direction": "I"
+          },
+          "x0_t": {
+            "direction": "I"
+          },
+          "x0_f": {
+            "direction": "I"
+          },
+          "y_ack": {
+            "direction": "I"
+          },
+          "y0_t": {
+            "direction": "O"
+          },
+          "y0_f": {
+            "direction": "O"
+          },
+          "x_ack": {
+            "direction": "O"
+          }
+        }
+      },
+      "latch_9": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "xci_name": "design_1_latch_0_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "preset": {
+            "direction": "I"
+          },
+          "x0_t": {
+            "direction": "I"
+          },
+          "x0_f": {
+            "direction": "I"
+          },
+          "y_ack": {
+            "direction": "I"
+          },
+          "y0_t": {
+            "direction": "O"
+          },
+          "y0_f": {
+            "direction": "O"
+          },
+          "x_ack": {
+            "direction": "O"
+          }
+        }
+      },
+      "latch_10": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "xci_name": "design_1_latch_0_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "preset": {
+            "direction": "I"
+          },
+          "x0_t": {
+            "direction": "I"
+          },
+          "x0_f": {
+            "direction": "I"
+          },
+          "y_ack": {
+            "direction": "I"
+          },
+          "y0_t": {
+            "direction": "O"
+          },
+          "y0_f": {
+            "direction": "O"
+          },
+          "x_ack": {
+            "direction": "O"
+          }
+        }
+      },
+      "latch_11": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "xci_name": "design_1_latch_10_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "preset": {
+            "direction": "I"
+          },
+          "x0_t": {
+            "direction": "I"
+          },
+          "x0_f": {
+            "direction": "I"
+          },
+          "y_ack": {
+            "direction": "I"
+          },
+          "y0_t": {
+            "direction": "O"
+          },
+          "y0_f": {
+            "direction": "O"
+          },
+          "x_ack": {
+            "direction": "O"
+          }
+        }
+      },
+      "ClockGenerator_0": {
+        "vlnv": "xilinx.com:module_ref:ClockGenerator:1.0",
+        "xci_name": "design_1_ClockGenerator_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ClockGenerator",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "ack_in": {
+            "direction": "I"
+          },
+          "preset": {
+            "direction": "O"
+          },
+          "d_t": {
+            "direction": "O"
+          },
+          "d_f": {
+            "direction": "O"
+          }
+        }
+      },
+      "APU_0": {
+        "vlnv": "xilinx.com:module_ref:APU:1.0",
+        "xci_name": "design_1_APU_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "APU",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "d_t": {
+            "direction": "I"
+          },
+          "d_f": {
+            "direction": "I"
+          },
+          "address_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "address_selection_0": {
+        "vlnv": "xilinx.com:module_ref:address_selection:1.0",
+        "xci_name": "design_1_address_selection_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "address_selection",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "address_port1": {
+            "direction": "I"
+          },
+          "address_port2": {
+            "direction": "I"
+          },
+          "address_ack": {
+            "direction": "I"
+          },
+          "address_t": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "address_f": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "out_latch_1": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "xci_name": "design_1_latch_2_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "preset": {
+            "direction": "I"
+          },
+          "x0_t": {
+            "direction": "I"
+          },
+          "x0_f": {
+            "direction": "I"
+          },
+          "y_ack": {
+            "direction": "I"
+          },
+          "y0_t": {
+            "direction": "O"
+          },
+          "y0_f": {
+            "direction": "O"
+          },
+          "x_ack": {
+            "direction": "O"
+          }
+        }
+      },
+      "Host_1": {
+        "vlnv": "xilinx.com:module_ref:Sink:1.0",
+        "xci_name": "design_1_Sink_0_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Sink",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "DT": {
+            "direction": "I"
+          },
+          "DF": {
+            "direction": "I"
+          },
+          "ACK": {
+            "direction": "O"
+          }
+        }
+      },
+      "CROSS2X2_0": {
+        "vlnv": "xilinx.com:module_ref:CROSS2X2:1.0",
+        "xci_name": "design_1_CROSS2X2_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CROSS2X2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "preset_port_1": {
+            "direction": "I"
+          },
+          "preset_port_2": {
+            "direction": "I"
+          },
+          "in_port_1_data_t": {
+            "direction": "I"
+          },
+          "in_port_1_data_f": {
+            "direction": "I"
+          },
+          "in_port_2_data_t": {
+            "direction": "I"
+          },
+          "in_port_2_data_f": {
+            "direction": "I"
+          },
+          "out_port_1_data_t": {
+            "direction": "O"
+          },
+          "out_port_1_data_f": {
+            "direction": "O"
+          },
+          "out_port_2_data_t": {
+            "direction": "O"
+          },
+          "out_port_2_data_f": {
+            "direction": "O"
+          },
+          "address_t": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "address_f": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "addres_ack": {
+            "direction": "O"
+          },
+          "out_port_1_ack": {
+            "direction": "I"
+          },
+          "out_port_2_ack": {
+            "direction": "I"
+          },
+          "in_port_1_ack": {
+            "direction": "O"
+          },
+          "in_port_2_ack": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "ClockGenerator_0_d_t": {
+        "ports": [
+          "ClockGenerator_0/d_t",
+          "latch_0/x0_t"
+        ]
+      },
+      "ClockGenerator_0_d_f": {
+        "ports": [
+          "ClockGenerator_0/d_f",
+          "latch_0/x0_f"
+        ]
+      },
+      "latch_0_x_ack": {
+        "ports": [
+          "latch_0/x_ack",
+          "ClockGenerator_0/ack_in"
+        ]
+      },
+      "latch_2_y0_t": {
+        "ports": [
+          "out_latch_0/y0_t",
+          "Host_0/DT"
+        ]
+      },
+      "latch_2_y0_f": {
+        "ports": [
+          "out_latch_0/y0_f",
+          "Host_0/DF"
+        ]
+      },
+      "Sink_0_ACK": {
+        "ports": [
+          "Host_0/ACK",
+          "out_latch_0/y_ack"
+        ]
+      },
+      "CROSS2X2_0_out_port_1_data_t": {
+        "ports": [
+          "CROSS2X2_0/out_port_1_data_t",
+          "out_latch_0/x0_t"
+        ]
+      },
+      "CROSS2X2_0_out_port_1_data_f": {
+        "ports": [
+          "CROSS2X2_0/out_port_1_data_f",
+          "out_latch_0/x0_f"
+        ]
+      },
+      "APU_0_address_t": {
+        "ports": [
+          "address_selection_0/address_t",
+          "CROSS2X2_0/address_t"
+        ]
+      },
+      "APU_0_address_f": {
+        "ports": [
+          "address_selection_0/address_f",
+          "CROSS2X2_0/address_f"
+        ]
+      },
+      "CROSS2X2_0_addres_ack": {
+        "ports": [
+          "CROSS2X2_0/addres_ack",
+          "address_selection_0/address_ack"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "CROSS2X2_0/in_port_2_data_t",
+          "CROSS2X2_0/in_port_2_data_f"
+        ]
+      },
+      "ClockGenerator_0_preset": {
+        "ports": [
+          "ClockGenerator_0/preset",
+          "out_latch_0/preset",
+          "latch_1/preset",
+          "latch_8/preset",
+          "latch_4/preset",
+          "latch_3/preset",
+          "latch_7/preset",
+          "latch_5/preset",
+          "latch_6/preset",
+          "latch_9/preset",
+          "latch_10/preset",
+          "latch_11/preset",
+          "out_latch_1/preset",
+          "CROSS2X2_0/preset_port_1",
+          "CROSS2X2_0/preset_port_2"
+        ]
+      },
+      "CROSS2X2_0_in_port_1_ack": {
+        "ports": [
+          "CROSS2X2_0/in_port_1_ack",
+          "latch_1/y_ack"
+        ]
+      },
+      "latch_1_y0_t": {
+        "ports": [
+          "latch_1/y0_t",
+          "CROSS2X2_0/in_port_1_data_t"
+        ]
+      },
+      "latch_1_y0_f": {
+        "ports": [
+          "latch_1/y0_f",
+          "CROSS2X2_0/in_port_1_data_f"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "latch_0/preset"
+        ]
+      },
+      "latch_0_y0_t": {
+        "ports": [
+          "latch_0/y0_t",
+          "latch_8/x0_t",
+          "APU_0/d_t"
+        ]
+      },
+      "latch_0_y0_f": {
+        "ports": [
+          "latch_0/y0_f",
+          "latch_8/x0_f",
+          "APU_0/d_f"
+        ]
+      },
+      "latch_8_y0_t": {
+        "ports": [
+          "latch_8/y0_t",
+          "latch_4/x0_t"
+        ]
+      },
+      "latch_8_y0_f": {
+        "ports": [
+          "latch_8/y0_f",
+          "latch_4/x0_f"
+        ]
+      },
+      "latch_4_y0_t": {
+        "ports": [
+          "latch_4/y0_t",
+          "latch_3/x0_t"
+        ]
+      },
+      "latch_4_y0_f": {
+        "ports": [
+          "latch_4/y0_f",
+          "latch_3/x0_f"
+        ]
+      },
+      "latch_3_y0_t": {
+        "ports": [
+          "latch_3/y0_t",
+          "latch_7/x0_t"
+        ]
+      },
+      "latch_3_y0_f": {
+        "ports": [
+          "latch_3/y0_f",
+          "latch_7/x0_f"
+        ]
+      },
+      "latch_7_y0_t": {
+        "ports": [
+          "latch_7/y0_t",
+          "latch_5/x0_t"
+        ]
+      },
+      "latch_7_y0_f": {
+        "ports": [
+          "latch_7/y0_f",
+          "latch_5/x0_f"
+        ]
+      },
+      "latch_5_y0_t": {
+        "ports": [
+          "latch_5/y0_t",
+          "latch_6/x0_t"
+        ]
+      },
+      "latch_5_y0_f": {
+        "ports": [
+          "latch_5/y0_f",
+          "latch_6/x0_f"
+        ]
+      },
+      "latch_6_x_ack": {
+        "ports": [
+          "latch_6/x_ack",
+          "latch_5/y_ack"
+        ]
+      },
+      "latch_5_x_ack": {
+        "ports": [
+          "latch_5/x_ack",
+          "latch_7/y_ack"
+        ]
+      },
+      "latch_7_x_ack": {
+        "ports": [
+          "latch_7/x_ack",
+          "latch_3/y_ack"
+        ]
+      },
+      "latch_3_x_ack": {
+        "ports": [
+          "latch_3/x_ack",
+          "latch_4/y_ack"
+        ]
+      },
+      "latch_4_x_ack": {
+        "ports": [
+          "latch_4/x_ack",
+          "latch_8/y_ack"
+        ]
+      },
+      "latch_8_x_ack": {
+        "ports": [
+          "latch_8/x_ack",
+          "latch_0/y_ack"
+        ]
+      },
+      "latch_6_y0_t": {
+        "ports": [
+          "latch_6/y0_t",
+          "latch_9/x0_t"
+        ]
+      },
+      "latch_6_y0_f": {
+        "ports": [
+          "latch_6/y0_f",
+          "latch_9/x0_f"
+        ]
+      },
+      "latch_9_x_ack": {
+        "ports": [
+          "latch_9/x_ack",
+          "latch_6/y_ack"
+        ]
+      },
+      "latch_9_y0_t": {
+        "ports": [
+          "latch_9/y0_t",
+          "latch_10/x0_t"
+        ]
+      },
+      "latch_9_y0_f": {
+        "ports": [
+          "latch_9/y0_f",
+          "latch_10/x0_f"
+        ]
+      },
+      "latch_10_x_ack": {
+        "ports": [
+          "latch_10/x_ack",
+          "latch_9/y_ack"
+        ]
+      },
+      "latch_10_y0_t": {
+        "ports": [
+          "latch_10/y0_t",
+          "latch_11/x0_t"
+        ]
+      },
+      "latch_10_y0_f": {
+        "ports": [
+          "latch_10/y0_f",
+          "latch_11/x0_f"
+        ]
+      },
+      "latch_11_x_ack": {
+        "ports": [
+          "latch_11/x_ack",
+          "latch_10/y_ack"
+        ]
+      },
+      "latch_11_y0_t": {
+        "ports": [
+          "latch_11/y0_t",
+          "latch_1/x0_t"
+        ]
+      },
+      "latch_11_y0_f": {
+        "ports": [
+          "latch_11/y0_f",
+          "latch_1/x0_f"
+        ]
+      },
+      "latch_1_x_ack": {
+        "ports": [
+          "latch_1/x_ack",
+          "latch_11/y_ack"
+        ]
+      },
+      "APU_0_address_out": {
+        "ports": [
+          "APU_0/address_out",
+          "address_selection_0/address_port1"
+        ]
+      },
+      "latch_12_y0_t": {
+        "ports": [
+          "out_latch_1/y0_t",
+          "Host_1/DT"
+        ]
+      },
+      "latch_12_y0_f": {
+        "ports": [
+          "out_latch_1/y0_f",
+          "Host_1/DF"
+        ]
+      },
+      "CROSS2X2_0_out_port_2_data_t": {
+        "ports": [
+          "CROSS2X2_0/out_port_2_data_t",
+          "out_latch_1/x0_t"
+        ]
+      },
+      "CROSS2X2_0_out_port_2_data_f": {
+        "ports": [
+          "CROSS2X2_0/out_port_2_data_f",
+          "out_latch_1/x0_f"
+        ]
+      },
+      "latch_2_x_ack": {
+        "ports": [
+          "out_latch_0/x_ack",
+          "CROSS2X2_0/out_port_1_ack"
+        ]
+      },
+      "latch_12_x_ack": {
+        "ports": [
+          "out_latch_1/x_ack",
+          "CROSS2X2_0/out_port_2_ack"
+        ]
+      },
+      "Sink_1_ACK": {
+        "ports": [
+          "Host_1/ACK",
+          "out_latch_1/y_ack"
+        ]
+      }
+    }
+  }
+}

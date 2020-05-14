@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../spacewire_rt.srcs/sources_1/imports/spacewire_router.srcs/sources_1/new/c_gate.vhd" \
+"../../../../spacewire_rt.srcs/sim_cgate/new/cgate_test.vhd" \
+
+# Do not sort compile order
+nosort

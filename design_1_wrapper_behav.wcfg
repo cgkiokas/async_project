@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="design_1_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="delays" />
+            <top_module name="design_1_wrapper" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="6617fs"></ZoomStartTime>
+      <ZoomEndTime time="43118fs"></ZoomEndTime>
+      <Cursor1Time time="11117fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="205"></NameColumnWidth>
+      <ValueColumnWidth column_width="96"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="1" />
+   <wvobject fp_name="group36" type="group">
+      <obj_property name="label">GENERATOR</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/ClockGenerator_0/U0/InputToDualRail/DATA" type="logic">
+         <obj_property name="ElementShortName">DATA</obj_property>
+         <obj_property name="ObjectShortName">DATA</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/ClockGenerator_0/U0/InputToDualRail/STROBE" type="logic">
+         <obj_property name="ElementShortName">STROBE</obj_property>
+         <obj_property name="ObjectShortName">STROBE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/ClockGenerator_0/U0/DOUT" type="logic">
+         <obj_property name="ElementShortName">DOUT</obj_property>
+         <obj_property name="ObjectShortName">DOUT</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/ClockGenerator_0/d_t" type="logic">
+         <obj_property name="ElementShortName">d_t</obj_property>
+         <obj_property name="ObjectShortName">d_t</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/ClockGenerator_0/d_f" type="logic">
+         <obj_property name="ElementShortName">d_f</obj_property>
+         <obj_property name="ObjectShortName">d_f</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/ClockGenerator_0/ack_in" type="logic">
+         <obj_property name="ElementShortName">ack_in</obj_property>
+         <obj_property name="ObjectShortName">ack_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="group47" type="group">
+         <obj_property name="label">LATCH_IN</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/latch_0/x0_t" type="logic">
+            <obj_property name="ElementShortName">x0_t</obj_property>
+            <obj_property name="ObjectShortName">x0_t</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/latch_0/x0_f" type="logic">
+            <obj_property name="ElementShortName">x0_f</obj_property>
+            <obj_property name="ObjectShortName">x0_f</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/latch_0/y_ack" type="logic">
+            <obj_property name="ElementShortName">y_ack</obj_property>
+            <obj_property name="ObjectShortName">y_ack</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/latch_0/U0/y_ack_not" type="logic">
+            <obj_property name="ElementShortName">y_ack_not</obj_property>
+            <obj_property name="ObjectShortName">y_ack_not</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/latch_0/y0_t" type="logic">
+            <obj_property name="ElementShortName">y0_t</obj_property>
+            <obj_property name="ObjectShortName">y0_t</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/latch_0/y0_f" type="logic">
+            <obj_property name="ElementShortName">y0_f</obj_property>
+            <obj_property name="ObjectShortName">y0_f</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/latch_0/x_ack" type="logic">
+            <obj_property name="ElementShortName">x_ack</obj_property>
+            <obj_property name="ObjectShortName">x_ack</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/latch_0/preset" type="logic">
+            <obj_property name="ElementShortName">preset</obj_property>
+            <obj_property name="ObjectShortName">preset</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group466" type="group">
+         <obj_property name="label">APU</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/APU_0/U0/d_t" type="logic">
+            <obj_property name="ElementShortName">d_t</obj_property>
+            <obj_property name="ObjectShortName">d_t</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/APU_0/U0/d_f" type="logic">
+            <obj_property name="ElementShortName">d_f</obj_property>
+            <obj_property name="ObjectShortName">d_f</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/APU_0/U0/address_ack" type="logic">
+            <obj_property name="ElementShortName">address_ack</obj_property>
+            <obj_property name="ObjectShortName">address_ack</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/APU_0/U0/address_t" type="array">
+            <obj_property name="ElementShortName">address_t[1:0]</obj_property>
+            <obj_property name="ObjectShortName">address_t[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/APU_0/U0/address_f" type="array">
+            <obj_property name="ElementShortName">address_f[1:0]</obj_property>
+            <obj_property name="ObjectShortName">address_f[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/APU_0/U0/packet_start" type="logic">
+            <obj_property name="ElementShortName">packet_start</obj_property>
+            <obj_property name="ObjectShortName">packet_start</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/APU_0/U0/count" type="other">
+            <obj_property name="ElementShortName">count</obj_property>
+            <obj_property name="ObjectShortName">count</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/APU_0/U0/incoming_bit" type="other">
+            <obj_property name="ElementShortName">incoming_bit</obj_property>
+            <obj_property name="ObjectShortName">incoming_bit</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group71" type="group">
+         <obj_property name="label">CROSSBAR</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/preset_port_1" type="logic">
+            <obj_property name="ElementShortName">preset_port_1</obj_property>
+            <obj_property name="ObjectShortName">preset_port_1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/preset_port_2" type="logic">
+            <obj_property name="ElementShortName">preset_port_2</obj_property>
+            <obj_property name="ObjectShortName">preset_port_2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/in_port_1_data_t" type="logic">
+            <obj_property name="ElementShortName">in_port_1_data_t</obj_property>
+            <obj_property name="ObjectShortName">in_port_1_data_t</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/in_port_1_data_f" type="logic">
+            <obj_property name="ElementShortName">in_port_1_data_f</obj_property>
+            <obj_property name="ObjectShortName">in_port_1_data_f</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/in_port_2_data_t" type="logic">
+            <obj_property name="ElementShortName">in_port_2_data_t</obj_property>
+            <obj_property name="ObjectShortName">in_port_2_data_t</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/in_port_2_data_f" type="logic">
+            <obj_property name="ElementShortName">in_port_2_data_f</obj_property>
+            <obj_property name="ObjectShortName">in_port_2_data_f</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/out_port_1_data_t" type="logic">
+            <obj_property name="ElementShortName">out_port_1_data_t</obj_property>
+            <obj_property name="ObjectShortName">out_port_1_data_t</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/out_port_1_data_f" type="logic">
+            <obj_property name="ElementShortName">out_port_1_data_f</obj_property>
+            <obj_property name="ObjectShortName">out_port_1_data_f</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/out_port_2_data_t" type="logic">
+            <obj_property name="ElementShortName">out_port_2_data_t</obj_property>
+            <obj_property name="ObjectShortName">out_port_2_data_t</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/out_port_2_data_f" type="logic">
+            <obj_property name="ElementShortName">out_port_2_data_f</obj_property>
+            <obj_property name="ObjectShortName">out_port_2_data_f</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/address_t" type="array">
+            <obj_property name="ElementShortName">address_t[1:0]</obj_property>
+            <obj_property name="ObjectShortName">address_t[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/address_f" type="array">
+            <obj_property name="ElementShortName">address_f[1:0]</obj_property>
+            <obj_property name="ObjectShortName">address_f[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/addres_ack" type="logic">
+            <obj_property name="ElementShortName">addres_ack</obj_property>
+            <obj_property name="ObjectShortName">addres_ack</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/out_port_1_ack" type="logic">
+            <obj_property name="ElementShortName">out_port_1_ack</obj_property>
+            <obj_property name="ObjectShortName">out_port_1_ack</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/out_port_2_ack" type="logic">
+            <obj_property name="ElementShortName">out_port_2_ack</obj_property>
+            <obj_property name="ObjectShortName">out_port_2_ack</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/in_port_1_ack" type="logic">
+            <obj_property name="ElementShortName">in_port_1_ack</obj_property>
+            <obj_property name="ObjectShortName">in_port_1_ack</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/in_port_2_ack" type="logic">
+            <obj_property name="ElementShortName">in_port_2_ack</obj_property>
+            <obj_property name="ObjectShortName">in_port_2_ack</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/U0/port1_ack_1" type="logic">
+            <obj_property name="ElementShortName">port1_ack_1</obj_property>
+            <obj_property name="ObjectShortName">port1_ack_1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/U0/port1_ack_2" type="logic">
+            <obj_property name="ElementShortName">port1_ack_2</obj_property>
+            <obj_property name="ObjectShortName">port1_ack_2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/U0/port2_ack_1" type="logic">
+            <obj_property name="ElementShortName">port2_ack_1</obj_property>
+            <obj_property name="ObjectShortName">port2_ack_1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/CROSS2X2_0/U0/port2_ack_2" type="logic">
+            <obj_property name="ElementShortName">port2_ack_2</obj_property>
+            <obj_property name="ObjectShortName">port2_ack_2</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group82" type="group">
+         <obj_property name="label">LATCH_OUT</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/latch_2/x0_t" type="logic">
+            <obj_property name="ElementShortName">x0_t</obj_property>
+            <obj_property name="ObjectShortName">x0_t</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/latch_2/x0_f" type="logic">
+            <obj_property name="ElementShortName">x0_f</obj_property>
+            <obj_property name="ObjectShortName">x0_f</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/latch_2/y_ack" type="logic">
+            <obj_property name="ElementShortName">y_ack</obj_property>
+            <obj_property name="ObjectShortName">y_ack</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/latch_2/U0/y_ack_not" type="logic">
+            <obj_property name="ElementShortName">y_ack_not</obj_property>
+            <obj_property name="ObjectShortName">y_ack_not</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/latch_2/y0_t" type="logic">
+            <obj_property name="ElementShortName">y0_t</obj_property>
+            <obj_property name="ObjectShortName">y0_t</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/latch_2/y0_f" type="logic">
+            <obj_property name="ElementShortName">y0_f</obj_property>
+            <obj_property name="ObjectShortName">y0_f</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/latch_2/x_ack" type="logic">
+            <obj_property name="ElementShortName">x_ack</obj_property>
+            <obj_property name="ObjectShortName">x_ack</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/latch_2/preset" type="logic">
+            <obj_property name="ElementShortName">preset</obj_property>
+            <obj_property name="ObjectShortName">preset</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group428" type="group">
+         <obj_property name="label">SINK</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/Sink_0/U0/preset" type="logic">
+            <obj_property name="ElementShortName">preset</obj_property>
+            <obj_property name="ObjectShortName">preset</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/Sink_0/U0/DT" type="logic">
+            <obj_property name="ElementShortName">DT</obj_property>
+            <obj_property name="ObjectShortName">DT</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/Sink_0/U0/DF" type="logic">
+            <obj_property name="ElementShortName">DF</obj_property>
+            <obj_property name="ObjectShortName">DF</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_1_wrapper/design_1_i/Sink_0/U0/ACK" type="logic">
+            <obj_property name="ElementShortName">ACK</obj_property>
+            <obj_property name="ObjectShortName">ACK</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

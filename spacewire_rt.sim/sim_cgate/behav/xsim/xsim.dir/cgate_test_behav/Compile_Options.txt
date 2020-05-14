@@ -1,0 +1,1 @@
+-wto "292506f06d084e47827ea0552c625422" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "cgate_test_behav" "xil_defaultlib.cgate_test" -log "elaborate.log" 

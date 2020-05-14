@@ -1,0 +1,875 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu May 14 17:17:43 2020" VIVADOVERSION="2019.2">
+
+  <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:basys3:part0:1.1" DEVICE="7a35t" NAME="design_1" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS/>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/APU_0" HWVERSION="1.0" INSTANCE="APU_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="APU" VLNV="xilinx.com:module_ref:APU:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_APU_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="d_t" SIGIS="undef" SIGNAME="latch_0_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_0" PORT="y0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="d_f" SIGIS="undef" SIGNAME="latch_0_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_0" PORT="y0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="address_out" SIGIS="undef" SIGNAME="APU_0_address_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="address_selection_0" PORT="address_port1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/CROSS2X2_0" HWVERSION="1.0" INSTANCE="CROSS2X2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="CROSS2X2" VLNV="xilinx.com:module_ref:CROSS2X2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_CROSS2X2_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="preset_port_1" SIGIS="undef" SIGNAME="ClockGenerator_0_preset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockGenerator_0" PORT="preset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="preset_port_2" SIGIS="undef" SIGNAME="ClockGenerator_0_preset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockGenerator_0" PORT="preset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_port_1_data_t" SIGIS="undef" SIGNAME="latch_1_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_1" PORT="y0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_port_1_data_f" SIGIS="undef" SIGNAME="latch_1_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_1" PORT="y0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_port_2_data_t" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_port_2_data_f" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_port_1_data_t" SIGIS="undef" SIGNAME="CROSS2X2_0_out_port_1_data_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="out_latch_0" PORT="x0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_port_1_data_f" SIGIS="undef" SIGNAME="CROSS2X2_0_out_port_1_data_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="out_latch_0" PORT="x0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_port_2_data_t" SIGIS="undef" SIGNAME="CROSS2X2_0_out_port_2_data_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="out_latch_1" PORT="x0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_port_2_data_f" SIGIS="undef" SIGNAME="CROSS2X2_0_out_port_2_data_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="out_latch_1" PORT="x0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="address_t" RIGHT="0" SIGIS="undef" SIGNAME="address_selection_0_address_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="address_selection_0" PORT="address_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="address_f" RIGHT="0" SIGIS="undef" SIGNAME="address_selection_0_address_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="address_selection_0" PORT="address_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="addres_ack" SIGIS="undef" SIGNAME="CROSS2X2_0_addres_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="address_selection_0" PORT="address_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="out_port_1_ack" SIGIS="undef" SIGNAME="out_latch_0_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="out_latch_0" PORT="x_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="out_port_2_ack" SIGIS="undef" SIGNAME="out_latch_1_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="out_latch_1" PORT="x_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="in_port_1_ack" SIGIS="undef" SIGNAME="CROSS2X2_0_in_port_1_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_1" PORT="y_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="in_port_2_ack" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/ClockGenerator_0" HWVERSION="1.0" INSTANCE="ClockGenerator_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ClockGenerator" VLNV="xilinx.com:module_ref:ClockGenerator:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_ClockGenerator_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="ack_in" SIGIS="undef" SIGNAME="latch_0_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_0" PORT="x_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="preset" SIGIS="undef" SIGNAME="ClockGenerator_0_preset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="out_latch_0" PORT="preset"/>
+            <CONNECTION INSTANCE="latch_1" PORT="preset"/>
+            <CONNECTION INSTANCE="latch_8" PORT="preset"/>
+            <CONNECTION INSTANCE="latch_4" PORT="preset"/>
+            <CONNECTION INSTANCE="latch_3" PORT="preset"/>
+            <CONNECTION INSTANCE="latch_7" PORT="preset"/>
+            <CONNECTION INSTANCE="latch_5" PORT="preset"/>
+            <CONNECTION INSTANCE="latch_6" PORT="preset"/>
+            <CONNECTION INSTANCE="latch_9" PORT="preset"/>
+            <CONNECTION INSTANCE="latch_10" PORT="preset"/>
+            <CONNECTION INSTANCE="latch_11" PORT="preset"/>
+            <CONNECTION INSTANCE="out_latch_1" PORT="preset"/>
+            <CONNECTION INSTANCE="CROSS2X2_0" PORT="preset_port_1"/>
+            <CONNECTION INSTANCE="CROSS2X2_0" PORT="preset_port_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="d_t" SIGIS="undef" SIGNAME="ClockGenerator_0_d_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_0" PORT="x0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="d_f" SIGIS="undef" SIGNAME="ClockGenerator_0_d_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_0" PORT="x0_f"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Host_0" HWVERSION="1.0" INSTANCE="Host_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Sink" VLNV="xilinx.com:module_ref:Sink:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_Sink_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="DT" SIGIS="undef" SIGNAME="out_latch_0_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="out_latch_0" PORT="y0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DF" SIGIS="undef" SIGNAME="out_latch_0_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="out_latch_0" PORT="y0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ACK" SIGIS="undef" SIGNAME="Host_0_ACK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="out_latch_0" PORT="y_ack"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Host_1" HWVERSION="1.0" INSTANCE="Host_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Sink" VLNV="xilinx.com:module_ref:Sink:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_Sink_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="DT" SIGIS="undef" SIGNAME="out_latch_1_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="out_latch_1" PORT="y0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DF" SIGIS="undef" SIGNAME="out_latch_1_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="out_latch_1" PORT="y0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ACK" SIGIS="undef" SIGNAME="Host_1_ACK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="out_latch_1" PORT="y_ack"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/address_selection_0" HWVERSION="1.0" INSTANCE="address_selection_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="address_selection" VLNV="xilinx.com:module_ref:address_selection:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_address_selection_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="address_port1" SIGIS="undef" SIGNAME="APU_0_address_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="APU_0" PORT="address_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="address_port2" SIGIS="undef"/>
+        <PORT DIR="I" NAME="address_ack" SIGIS="undef" SIGNAME="CROSS2X2_0_addres_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CROSS2X2_0" PORT="addres_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="address_t" RIGHT="0" SIGIS="undef" SIGNAME="address_selection_0_address_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CROSS2X2_0" PORT="address_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="address_f" RIGHT="0" SIGIS="undef" SIGNAME="address_selection_0_address_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CROSS2X2_0" PORT="address_f"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/latch_0" HWVERSION="1.0" INSTANCE="latch_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="latch" VLNV="xilinx.com:module_ref:latch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_latch_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="preset" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_t" SIGIS="undef" SIGNAME="ClockGenerator_0_d_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockGenerator_0" PORT="d_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_f" SIGIS="undef" SIGNAME="ClockGenerator_0_d_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockGenerator_0" PORT="d_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="y_ack" SIGIS="undef" SIGNAME="latch_8_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_8" PORT="x_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_t" SIGIS="undef" SIGNAME="latch_0_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_8" PORT="x0_t"/>
+            <CONNECTION INSTANCE="APU_0" PORT="d_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_f" SIGIS="undef" SIGNAME="latch_0_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_8" PORT="x0_f"/>
+            <CONNECTION INSTANCE="APU_0" PORT="d_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="x_ack" SIGIS="undef" SIGNAME="latch_0_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockGenerator_0" PORT="ack_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/latch_1" HWVERSION="1.0" INSTANCE="latch_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="latch" VLNV="xilinx.com:module_ref:latch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_latch_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="preset" SIGIS="undef" SIGNAME="ClockGenerator_0_preset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockGenerator_0" PORT="preset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_t" SIGIS="undef" SIGNAME="latch_11_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_11" PORT="y0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_f" SIGIS="undef" SIGNAME="latch_11_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_11" PORT="y0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="y_ack" SIGIS="undef" SIGNAME="CROSS2X2_0_in_port_1_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CROSS2X2_0" PORT="in_port_1_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_t" SIGIS="undef" SIGNAME="latch_1_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CROSS2X2_0" PORT="in_port_1_data_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_f" SIGIS="undef" SIGNAME="latch_1_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CROSS2X2_0" PORT="in_port_1_data_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="x_ack" SIGIS="undef" SIGNAME="latch_1_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_11" PORT="y_ack"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/latch_10" HWVERSION="1.0" INSTANCE="latch_10" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="latch" VLNV="xilinx.com:module_ref:latch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_latch_0_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="preset" SIGIS="undef" SIGNAME="ClockGenerator_0_preset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockGenerator_0" PORT="preset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_t" SIGIS="undef" SIGNAME="latch_9_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_9" PORT="y0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_f" SIGIS="undef" SIGNAME="latch_9_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_9" PORT="y0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="y_ack" SIGIS="undef" SIGNAME="latch_11_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_11" PORT="x_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_t" SIGIS="undef" SIGNAME="latch_10_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_11" PORT="x0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_f" SIGIS="undef" SIGNAME="latch_10_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_11" PORT="x0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="x_ack" SIGIS="undef" SIGNAME="latch_10_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_9" PORT="y_ack"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/latch_11" HWVERSION="1.0" INSTANCE="latch_11" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="latch" VLNV="xilinx.com:module_ref:latch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_latch_10_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="preset" SIGIS="undef" SIGNAME="ClockGenerator_0_preset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockGenerator_0" PORT="preset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_t" SIGIS="undef" SIGNAME="latch_10_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_10" PORT="y0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_f" SIGIS="undef" SIGNAME="latch_10_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_10" PORT="y0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="y_ack" SIGIS="undef" SIGNAME="latch_1_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_1" PORT="x_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_t" SIGIS="undef" SIGNAME="latch_11_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_1" PORT="x0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_f" SIGIS="undef" SIGNAME="latch_11_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_1" PORT="x0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="x_ack" SIGIS="undef" SIGNAME="latch_11_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_10" PORT="y_ack"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/latch_3" HWVERSION="1.0" INSTANCE="latch_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="latch" VLNV="xilinx.com:module_ref:latch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_latch_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="preset" SIGIS="undef" SIGNAME="ClockGenerator_0_preset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockGenerator_0" PORT="preset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_t" SIGIS="undef" SIGNAME="latch_4_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_4" PORT="y0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_f" SIGIS="undef" SIGNAME="latch_4_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_4" PORT="y0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="y_ack" SIGIS="undef" SIGNAME="latch_7_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_7" PORT="x_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_t" SIGIS="undef" SIGNAME="latch_3_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_7" PORT="x0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_f" SIGIS="undef" SIGNAME="latch_3_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_7" PORT="x0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="x_ack" SIGIS="undef" SIGNAME="latch_3_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_4" PORT="y_ack"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/latch_4" HWVERSION="1.0" INSTANCE="latch_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="latch" VLNV="xilinx.com:module_ref:latch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_latch_1_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="preset" SIGIS="undef" SIGNAME="ClockGenerator_0_preset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockGenerator_0" PORT="preset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_t" SIGIS="undef" SIGNAME="latch_8_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_8" PORT="y0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_f" SIGIS="undef" SIGNAME="latch_8_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_8" PORT="y0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="y_ack" SIGIS="undef" SIGNAME="latch_3_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_3" PORT="x_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_t" SIGIS="undef" SIGNAME="latch_4_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_3" PORT="x0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_f" SIGIS="undef" SIGNAME="latch_4_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_3" PORT="x0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="x_ack" SIGIS="undef" SIGNAME="latch_4_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_8" PORT="y_ack"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/latch_5" HWVERSION="1.0" INSTANCE="latch_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="latch" VLNV="xilinx.com:module_ref:latch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_latch_1_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="preset" SIGIS="undef" SIGNAME="ClockGenerator_0_preset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockGenerator_0" PORT="preset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_t" SIGIS="undef" SIGNAME="latch_7_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_7" PORT="y0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_f" SIGIS="undef" SIGNAME="latch_7_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_7" PORT="y0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="y_ack" SIGIS="undef" SIGNAME="latch_6_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_6" PORT="x_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_t" SIGIS="undef" SIGNAME="latch_5_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_6" PORT="x0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_f" SIGIS="undef" SIGNAME="latch_5_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_6" PORT="x0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="x_ack" SIGIS="undef" SIGNAME="latch_5_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_7" PORT="y_ack"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/latch_6" HWVERSION="1.0" INSTANCE="latch_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="latch" VLNV="xilinx.com:module_ref:latch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_latch_1_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="preset" SIGIS="undef" SIGNAME="ClockGenerator_0_preset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockGenerator_0" PORT="preset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_t" SIGIS="undef" SIGNAME="latch_5_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_5" PORT="y0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_f" SIGIS="undef" SIGNAME="latch_5_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_5" PORT="y0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="y_ack" SIGIS="undef" SIGNAME="latch_9_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_9" PORT="x_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_t" SIGIS="undef" SIGNAME="latch_6_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_9" PORT="x0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_f" SIGIS="undef" SIGNAME="latch_6_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_9" PORT="x0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="x_ack" SIGIS="undef" SIGNAME="latch_6_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_5" PORT="y_ack"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/latch_7" HWVERSION="1.0" INSTANCE="latch_7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="latch" VLNV="xilinx.com:module_ref:latch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_latch_1_4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="preset" SIGIS="undef" SIGNAME="ClockGenerator_0_preset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockGenerator_0" PORT="preset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_t" SIGIS="undef" SIGNAME="latch_3_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_3" PORT="y0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_f" SIGIS="undef" SIGNAME="latch_3_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_3" PORT="y0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="y_ack" SIGIS="undef" SIGNAME="latch_5_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_5" PORT="x_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_t" SIGIS="undef" SIGNAME="latch_7_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_5" PORT="x0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_f" SIGIS="undef" SIGNAME="latch_7_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_5" PORT="x0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="x_ack" SIGIS="undef" SIGNAME="latch_7_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_3" PORT="y_ack"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/latch_8" HWVERSION="1.0" INSTANCE="latch_8" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="latch" VLNV="xilinx.com:module_ref:latch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_latch_1_5"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="preset" SIGIS="undef" SIGNAME="ClockGenerator_0_preset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockGenerator_0" PORT="preset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_t" SIGIS="undef" SIGNAME="latch_0_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_0" PORT="y0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_f" SIGIS="undef" SIGNAME="latch_0_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_0" PORT="y0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="y_ack" SIGIS="undef" SIGNAME="latch_4_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_4" PORT="x_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_t" SIGIS="undef" SIGNAME="latch_8_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_4" PORT="x0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_f" SIGIS="undef" SIGNAME="latch_8_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_4" PORT="x0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="x_ack" SIGIS="undef" SIGNAME="latch_8_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_0" PORT="y_ack"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/latch_9" HWVERSION="1.0" INSTANCE="latch_9" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="latch" VLNV="xilinx.com:module_ref:latch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_latch_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="preset" SIGIS="undef" SIGNAME="ClockGenerator_0_preset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockGenerator_0" PORT="preset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_t" SIGIS="undef" SIGNAME="latch_6_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_6" PORT="y0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_f" SIGIS="undef" SIGNAME="latch_6_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_6" PORT="y0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="y_ack" SIGIS="undef" SIGNAME="latch_10_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_10" PORT="x_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_t" SIGIS="undef" SIGNAME="latch_9_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_10" PORT="x0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_f" SIGIS="undef" SIGNAME="latch_9_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_10" PORT="x0_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="x_ack" SIGIS="undef" SIGNAME="latch_9_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_6" PORT="y_ack"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/out_latch_0" HWVERSION="1.0" INSTANCE="out_latch_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="latch" VLNV="xilinx.com:module_ref:latch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_latch_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="preset" SIGIS="undef" SIGNAME="ClockGenerator_0_preset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockGenerator_0" PORT="preset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_t" SIGIS="undef" SIGNAME="CROSS2X2_0_out_port_1_data_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CROSS2X2_0" PORT="out_port_1_data_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_f" SIGIS="undef" SIGNAME="CROSS2X2_0_out_port_1_data_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CROSS2X2_0" PORT="out_port_1_data_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="y_ack" SIGIS="undef" SIGNAME="Host_0_ACK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Host_0" PORT="ACK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_t" SIGIS="undef" SIGNAME="out_latch_0_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Host_0" PORT="DT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_f" SIGIS="undef" SIGNAME="out_latch_0_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Host_0" PORT="DF"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="x_ack" SIGIS="undef" SIGNAME="out_latch_0_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CROSS2X2_0" PORT="out_port_1_ack"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/out_latch_1" HWVERSION="1.0" INSTANCE="out_latch_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="latch" VLNV="xilinx.com:module_ref:latch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_latch_2_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="preset" SIGIS="undef" SIGNAME="ClockGenerator_0_preset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockGenerator_0" PORT="preset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_t" SIGIS="undef" SIGNAME="CROSS2X2_0_out_port_2_data_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CROSS2X2_0" PORT="out_port_2_data_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x0_f" SIGIS="undef" SIGNAME="CROSS2X2_0_out_port_2_data_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CROSS2X2_0" PORT="out_port_2_data_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="y_ack" SIGIS="undef" SIGNAME="Host_1_ACK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Host_1" PORT="ACK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_t" SIGIS="undef" SIGNAME="out_latch_1_y0_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Host_1" PORT="DT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y0_f" SIGIS="undef" SIGNAME="out_latch_1_y0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Host_1" PORT="DF"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="x_ack" SIGIS="undef" SIGNAME="out_latch_1_x_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CROSS2X2_0" PORT="out_port_2_ack"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_0" PORT="preset"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/xlconstant_1" HWVERSION="1.1" INSTANCE="xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CROSS2X2_0" PORT="in_port_2_data_t"/>
+            <CONNECTION INSTANCE="CROSS2X2_0" PORT="in_port_2_data_f"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

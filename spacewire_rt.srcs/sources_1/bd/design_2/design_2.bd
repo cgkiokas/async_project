@@ -1,0 +1,84 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a35tcpg236-1",
+      "name": "design_2",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "latch_0": "",
+      "APU_0": ""
+    },
+    "components": {
+      "latch_0": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "xci_name": "design_2_latch_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "preset": {
+            "direction": "I"
+          },
+          "x0_t": {
+            "direction": "I"
+          },
+          "x0_f": {
+            "direction": "I"
+          },
+          "y_ack": {
+            "direction": "I"
+          },
+          "y0_t": {
+            "direction": "O"
+          },
+          "y0_f": {
+            "direction": "O"
+          },
+          "x_ack": {
+            "direction": "O"
+          }
+        }
+      },
+      "APU_0": {
+        "vlnv": "xilinx.com:module_ref:APU:1.0",
+        "xci_name": "design_2_APU_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "APU",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "d_t": {
+            "direction": "I"
+          },
+          "d_f": {
+            "direction": "I"
+          },
+          "address_out": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "latch_0_y0_t": {
+        "ports": [
+          "latch_0/y0_t",
+          "APU_0/d_t"
+        ]
+      },
+      "latch_0_y0_f": {
+        "ports": [
+          "latch_0/y0_f",
+          "APU_0/d_f"
+        ]
+      }
+    }
+  }
+}
